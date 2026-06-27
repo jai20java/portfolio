@@ -8,9 +8,9 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden starry-bg">
-      <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10 py-12 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="relative lg:min-h-screen flex items-center pt-24 pb-16 overflow-hidden starry-bg">
+      <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10 py-8 md:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           
           <div className="flex flex-col gap-6">
             <motion.div 
@@ -26,11 +26,11 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold text-white tracking-tight leading-tight break-words"
             >
               Hi, I'm <span className="text-primary">{siteData.name}</span>
               <br />
-              {siteData.role}
+              <span className="block">{siteData.role}</span>
             </motion.h1>
 
             <motion.p 
@@ -81,15 +81,15 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="relative hidden lg:block"
+            className="relative order-first w-full max-w-[320px] sm:max-w-[380px] lg:order-none lg:max-w-none mx-auto"
           >
-            <div className="relative w-[450px] h-[450px] mx-auto rounded-3xl overflow-hidden bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-white/10 shadow-2xl">
+            <div className="relative w-full aspect-[4/5] sm:aspect-square lg:w-[450px] lg:h-[450px] mx-auto rounded-3xl overflow-hidden bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-white/10 shadow-2xl">
               <Image
                 src="/images/jayashivesh-header.png"
                 alt="Jayashivesh working at a laptop"
                 fill
                 priority
-                sizes="450px"
+                sizes="(max-width: 640px) 320px, (max-width: 1024px) 380px, 450px"
                 className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f19]/30 via-transparent to-transparent" />
@@ -100,14 +100,14 @@ export function Hero() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="absolute -bottom-12 -left-12 dark-glass-card p-6 rounded-xl shadow-2xl border border-white/10 w-[380px]"
+              className="relative mt-5 w-full dark-glass-card p-4 sm:p-5 rounded-xl shadow-2xl border border-white/10 lg:absolute lg:-bottom-12 lg:-left-12 lg:mt-0 lg:w-[380px] lg:p-6"
             >
               <div className="flex gap-2 mb-4">
                 <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
                 <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                 <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
               </div>
-              <pre className="text-sm font-mono text-green-400 overflow-hidden whitespace-pre-wrap">
+              <pre className="text-[11px] sm:text-xs lg:text-sm font-mono text-green-400 overflow-hidden whitespace-pre-wrap">
                 <code>
                   <span className="text-pink-400">class</span> <span className="text-blue-400">Developer</span>:<br/>
                   {"    "}<span className="text-pink-400">def</span> <span className="text-yellow-200">__init__</span>(self):<br/>

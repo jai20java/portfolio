@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jayashivesh | Full Stack Python Developer",
-  description: "Portfolio of jayshivesh, a Full Stack Python Developer specializing in Django and cloud deployment.",
+  title: "Jayashivesh | Full Stack & Python Developer",
+  description: "Portfolio of Jayashivesh, a Full Stack & Python Developer specializing in Django and deployment.",
 };
 
 
