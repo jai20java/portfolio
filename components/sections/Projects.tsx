@@ -6,6 +6,7 @@ import { SectionHeading } from "../ui/SectionHeading";
 import { Card } from "../ui/Card";
 import { Button } from "../ui/Button";
 import { ExternalLink, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export function Projects() {
   return (
@@ -31,19 +32,12 @@ export function Projects() {
               <Card className="flex flex-col w-full overflow-hidden group hover:shadow-lg transition-shadow duration-300">
                 {/* Project Screenshot */}
                 <div className="h-48 w-full relative overflow-hidden border-b border-slate-100 bg-slate-100">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    onError={(e) => {
-                      const target = e.currentTarget;
-                      target.style.display = "none";
-                      const parent = target.parentElement;
-                      if (parent) {
-                        parent.style.background = "linear-gradient(135deg, #e2e8f0, #cbd5e1)";
-                        parent.innerHTML += `<span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-weight:500;font-size:0.875rem;">Preview Unavailable</span>`;
-                      }
-                    }}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 

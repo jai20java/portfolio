@@ -3,20 +3,20 @@
 import { motion } from "framer-motion";
 import { siteData } from "../../data/portfolio";
 import { SectionHeading } from "../ui/SectionHeading";
-import { Trophy, Rocket, Cloud, Star } from "lucide-react";
+import { Trophy, Rocket, Cloud } from "lucide-react";
 
 const iconMap: Record<string, React.ReactNode> = {
   trophy: <Trophy className="w-8 h-8 text-purple" />,
   rocket: <Rocket className="w-8 h-8 text-blue-500" />,
   cloud: <Cloud className="w-8 h-8 text-blue-400" />,
-  star: <Star className="w-8 h-8 text-primary" />,
+  
 };
 
 const iconBgMap: Record<string, string> = {
   trophy: "bg-purple/10",
   rocket: "bg-blue-500/10",
   cloud: "bg-blue-400/10",
-  star: "bg-primary/10",
+  
 };
 
 export function Achievements() {

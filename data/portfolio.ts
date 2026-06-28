@@ -107,14 +107,14 @@ export const siteData = {
   education: [
     {
       degree: "B.Tech in AI & Data Science",
-      institution: "K.L.N. College of Engineering,\\nSivagangai, Tamil Nadu",
-      expected: "2025",
+      institution: "K.L.N. College of Engineering,Sivagangai, Tamil Nadu",
+      expected: "2027",
       type: "degree"
     },
     {
       degree: "High School Diploma",
-      institution: "Velammal Bodhi Campus,\\nMadurai, Tamil Nadu",
-      completed: "2021",
+      institution: "Velammal Bodhi Campus,Madurai, Tamil Nadu",
+      completed: "2022",
       type: "school"
     }
   ],
@@ -127,8 +127,8 @@ export const siteData = {
   ],
   achievements: [
     { value: "3+", label: "Production Projects", icon: "trophy" },
-    { value: "2", label: "Live Websites Deployed", icon: "rocket" },
+    { value: "3", label: "Live Websites Deployed", icon: "rocket" },
     { value: "1", label: "Client SaaS Product", icon: "cloud" },
-    { value: "100%", label: "Deployed on AWS", icon: "star" }
+    
   ]
 };

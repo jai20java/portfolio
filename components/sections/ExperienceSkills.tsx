@@ -100,7 +100,7 @@ export function ExperienceSkills() {
             </div>
             
             <div className="space-y-6 p-8 rounded-2xl bg-white border border-slate-100 shadow-sm">
-              {siteData.skillsOverview.map((skill, index) => (
+              {siteData.skillsOverview.map((skill) => (
                 <div key={skill.name}>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-base font-medium text-slate-700">{skill.name}</span>

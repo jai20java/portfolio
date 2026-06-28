@@ -49,7 +49,7 @@ export function About() {
             transition={{ delay: 0.2 }}
             className="grid grid-cols-1 sm:grid-cols-2 gap-4"
           >
-            {siteData.about.details.map((detail, index) => (
+            {siteData.about.details.map((detail) => (
               <Card key={detail.label} className="p-6 flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform duration-300">
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center ${iconBgMap[detail.label]}`}>
                   {iconMap[detail.label]}

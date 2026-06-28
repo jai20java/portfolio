@@ -21,8 +21,8 @@ const skillIcons: Record<string, string> = {
   pycharm: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg",
   vscode: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
   github: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-  antigravity: "https://www.dockhunt.com/_next/image?url=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2F18647571-0590-4ec8-90b0-dcc78d7f227b&w=384&q=75",
-  cursor: "https://www.cursor.com/favicon.ico",
+  antigravity: "/images/antigravity-icon.png",
+  cursor: "/images/cursor.png",
 };
 
 export function Skills() {
@@ -46,6 +46,7 @@ export function Skills() {
                     src={skillIcons[skill.icon]} 
                     alt={skill.name}
                     fill
+                    sizes="48px"
                     className="object-contain"
                   />
                 </div>

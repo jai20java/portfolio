@@ -8,11 +8,11 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative lg:min-h-screen flex items-center pt-24 pb-16 overflow-hidden starry-bg">
-      <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10 py-8 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+    <section className="relative lg:min-h-screen flex items-center pt-20 sm:pt-24 pb-12 sm:pb-16 overflow-hidden starry-bg">
+      <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10 py-2 sm:py-8 md:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
           
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-5 sm:gap-6 -mt-2 sm:mt-0">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export function Hero() {
               transition={{ delay: 0.1 }}
               className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold text-white tracking-tight leading-tight break-words"
             >
-              Hi, I'm <span className="text-primary">{siteData.name}</span>
+              Hi, I&apos;m <span className="text-primary">{siteData.name}</span>
               <br />
               <span className="block">{siteData.role}</span>
             </motion.h1>
@@ -81,11 +81,11 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="relative order-first w-full max-w-[320px] sm:max-w-[380px] lg:order-none lg:max-w-none mx-auto"
+            className="relative mt-2 sm:mt-0 w-full max-w-[320px] sm:max-w-[380px] lg:max-w-none mx-auto"
           >
             <div className="relative w-full aspect-[4/5] sm:aspect-square lg:w-[450px] lg:h-[450px] mx-auto rounded-3xl overflow-hidden bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-white/10 shadow-2xl">
               <Image
-                src="/images/jayashivesh-header.png"
+                src="/images/jayashivesh-header-current.png"
                 alt="Jayashivesh working at a laptop"
                 fill
                 priority
@@ -111,10 +111,10 @@ export function Hero() {
                 <code>
                   <span className="text-pink-400">class</span> <span className="text-blue-400">Developer</span>:<br/>
                   {"    "}<span className="text-pink-400">def</span> <span className="text-yellow-200">__init__</span>(self):<br/>
-                  {"        "}self.name = <span className="text-yellow-300">"Jayashivesh"</span><br/>
-                  {"        "}self.role = <span className="text-yellow-300">"Full Stack Developer"</span><br/>
-                  {"        "}self.language = <span className="text-yellow-300">"Python"</span><br/>
-                  {"        "}self.passion = <span className="text-yellow-300">"Building solutions"</span>
+                  {"        "}self.name = <span className="text-yellow-300">&quot;Jayashivesh&quot;</span><br/>
+                  {"        "}self.role = <span className="text-yellow-300">&quot;Full Stack Developer&quot;</span><br/>
+                  {"        "}self.language = <span className="text-yellow-300">&quot;Python&quot;</span><br/>
+                  {"        "}self.passion = <span className="text-yellow-300">&quot;Building solutions&quot;</span>
                 </code>
               </pre>
             </motion.div>
