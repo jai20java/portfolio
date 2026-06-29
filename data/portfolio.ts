@@ -1,7 +1,7 @@
 export const siteData = {
   name: "Jayashivesh",
   role: "Full Stack Python Developer",
-  resumeUrl: "/Jayashivesh_RS_Resume-2.docx",
+  resumeUrl: "/JAYASHIVESH_RS_RESUME.docx",
   socials: {
     github: "https://github.com/jai20java",
     linkedin: "https://linkedin.com/in/jayashivesh-r-s-8a162830b",
